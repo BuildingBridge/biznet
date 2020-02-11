@@ -1,0 +1,68 @@
+.b24-window-scrollable {
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 100%;
+	-webkit-overflow-scrolling: touch;
+}
+
+/** Overlay **/
+.b24-window-overlay {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 15000;
+}
+
+/** Close button **/
+.b24-window-close {
+	position: absolute;
+	top: 12px;
+	right: 23px;
+	width: 29px;
+	height: 29px;
+	border-radius: 100%;
+	border: none;
+	transition: opacity .3s;
+	opacity: .5;
+	cursor: pointer;
+	outline: none;
+	z-index: 5;
+}
+
+.b24-window-close:hover { opacity: 1; }
+
+.b24-window-close:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 15px;
+	height: 15px;
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20viewBox%3D%220%200%2015%2015%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M8.755%207.291l5.676%205.676a.799.799%200%200%201-1.13%201.13L7.625%208.42l-5.676%205.676a.799.799%200%200%201-1.13-1.13l5.676-5.676L.82%201.615A.799.799%200%201%201%201.95.485l5.676%205.676L13.301.485a.799.799%200%200%201%201.13%201.13L8.755%207.29z%22%20fill%3D%22%23000%22%20fill-rule%3D%22evenodd%22%20opacity%3D%22.9%22/%3E%3C/svg%3E');
+	background-repeat: no-repeat;
+	transform: translate(-50%, -50%);
+}
+
+.b24-window-header {
+	padding: 10px 31px 10px;
+	border-radius: 6px 6px 0 0;
+	border-bottom: 1px solid rgba(82, 92, 105, .11);
+	background-color: #fff;
+	background-color: var(--b24-background-color);
+}
+
+.b24-window-header-title {
+	font: 14px/17px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 14px/17px var(--b24-font-family);
+	color: #000;
+	color: var(--b24-text-color);
+	text-transform: uppercase;
+	opacity: .8;
+	letter-spacing: 2px;
+	overflow: hidden;
+	white-space: nowrap;
+}

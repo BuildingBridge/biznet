@@ -1,0 +1,47 @@
+
+
+
+https://training.bitrix24.com/support/training/course/?COURSE_ID=58&LESSON_ID=5907
+
+##      ##
+#  VIRTS #
+##      ##
+    http://repos.bitrixsoft.com/vm/vm-bitrix24-installer.exe
+    http://repos.bitrixsoft.com/vm/vm_bitrix24_crm_virtualbox.zip
+    http://repos.bitrixsoft.com/vm/vm_bitrix24_crm_ova.ova
+    http://repos.bitrixsoft.com/vm/vm_bitrix24_crm_hyperv.zip
+    http://repos.bitrixsoft.com/vm/vm_bitrix24_crm_vmware.zip
+
+##      ##
+# SOURCE #
+##      ##
+
+    # Business #
+    http://www.bitrixsoft.com/download/portal/en_bitrix24_encode.zip
+    http://www.bitrixsoft.com/download/portal/en_bitrix24_encode.tar.gz
+
+    # Enterprise #
+    http://www.bitrixsoft.com/download/portal/en_bitrix24_enterprise_encode.zip
+    http://www.bitrixsoft.com/download/portal/en_bitrix24_enterprise_encode.tar.gz
+
+##       ##
+# DESKTOP #
+##       ##
+    http://dl.bitrix24.com/b24/bitrix24_desktop.dmg
+    http://dl.bitrix24.com/b24/bitrix24_desktop.exe
+    http://dl.bitrix24.com/b24/bitrix24_desktop.msi
+
+
+##          ##
+# REPOSITORY #
+##          ##
+
+    http://repos.bitrixsoft.com/yum/bitrix-env-crm.sh
+
+    [bitrix]
+    name=$OS $releasever - $basearch
+    failovermethod=priority
+    baseurl=http://repos.1c-bitrix.ru/yum/el/7/$basearch
+    enabled=1
+    gpgcheck=1
+    gpgkey=http://repos.1c-bitrix.ru/yum/RPM-GPG-KEY-BitrixEnv
